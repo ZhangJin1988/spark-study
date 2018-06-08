@@ -11,7 +11,7 @@ object ABTest {
 
   def main(args: Array[String]): Unit = {
 
-    val sc = MySparkUtils.getSparkContext(this.getClass.getSimpleName)
+    val sc = MySparkUtils.getLocalSparkContext(this.getClass.getSimpleName)
 
     val aData: RDD[String] = sc.textFile("/Users/zhangjin/myCode/learn/spark-study/a.txt")
     val bData: RDD[String] = sc.textFile("/Users/zhangjin/myCode/learn/spark-study/b.txt")

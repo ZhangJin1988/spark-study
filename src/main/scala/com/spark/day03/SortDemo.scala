@@ -16,7 +16,7 @@ object SortDemo {
 
 
     val tmp:Array[Double] = d1.map(_._2)
-    val sc: SparkContext = MySparkUtils.getSparkContext(this.getClass.getSimpleName)
+    val sc: SparkContext = MySparkUtils.getLocalSparkContext(this.getClass.getSimpleName)
 
 
     val rdd1: RDD[(String, Double)] = sc.makeRDD(d1)

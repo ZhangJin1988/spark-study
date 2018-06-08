@@ -27,7 +27,7 @@ object Practice2 {
   def main(args: Array[String]): Unit = {
 
 
-    val sc: SparkContext = MySparkUtils.getSparkContext(this.getClass.getSimpleName)
+    val sc: SparkContext = MySparkUtils.getLocalSparkContext(this.getClass.getSimpleName)
 
     val aRdd: RDD[String] = sc.textFile("/Users/zhangjin/myCode/learn/spark-study/a.txt")
     val bRdd: RDD[String] = sc.textFile("/Users/zhangjin/myCode/learn/spark-study/b.txt")

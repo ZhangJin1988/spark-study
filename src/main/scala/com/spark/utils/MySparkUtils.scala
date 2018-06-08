@@ -9,7 +9,7 @@ import org.apache.spark.{SparkConf, SparkContext}
 object MySparkUtils {
 
 
-  def getSparkContext(appName: String): SparkContext = {
+  def getLocalSparkContext(appName: String): SparkContext = {
 
     val conf: SparkConf = new SparkConf().setMaster("local[2]").setAppName(appName)
     //
