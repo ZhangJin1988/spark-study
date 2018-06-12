@@ -11,7 +11,7 @@ object MySparkUtils {
 
   def getLocalSparkContext(appName: String): SparkContext = {
 
-    val conf: SparkConf = new SparkConf().setMaster("local[2]").setAppName(appName)
+    val conf: SparkConf = new SparkConf().setMaster("local[*]").setAppName(appName)
     //
     val sc: SparkContext = new SparkContext(conf)
 
