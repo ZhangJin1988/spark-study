@@ -1,7 +1,4 @@
-package cn.spark.study.core;
-
-import java.util.Arrays;
-import java.util.List;
+package com.spark.core.java;
 
 import org.apache.spark.SparkConf;
 import org.apache.spark.api.java.JavaRDD;
@@ -9,6 +6,9 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.api.java.function.Function;
 import org.apache.spark.api.java.function.VoidFunction;
 import org.apache.spark.broadcast.Broadcast;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * 广播变量

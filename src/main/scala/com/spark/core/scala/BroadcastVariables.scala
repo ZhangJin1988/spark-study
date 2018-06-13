@@ -6,7 +6,7 @@ import org.apache.spark.SparkContext
 /**
  * @author Administrator
  */
-object BroadcastVariable {
+object BroadcastVariables {
   
   def main(args: Array[String]) {
     val conf = new SparkConf()
